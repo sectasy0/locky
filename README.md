@@ -52,7 +52,6 @@ Connect all components as shown in the scheme above, make sure that the connecti
 
 ## Tech
 #
-Locky uses a number of open source projects to work properly:
 - [Flutter] - Mobile application framework
 - [ESPAsyncWebServer] - Async HTTP and WebSocket Server for ESP Arduino
 - C++ 
