@@ -25,12 +25,23 @@ the mobile application is written in a flutter, and the microcontroller program 
 #
 
 To properly build this project, you should have the following components:
-- Voltage stabilizer (LM7810), but you can use any power source that suits your microcontroller  
-- microcontroler (see 'Supported microcontrolers' section)
-- 2x 220 Ohm resistors
-- 2x Optocouplers
-- 1x 1k Ohm resistor
 
+#### Power supply
+
+![nodemcu_pinouts](imgs/power_supply.png)
+
+- Voltage stabilizer (LM7810), but you can use any power source that suits your microcontroller  
+- 10Ohm 5W resistor
+- 1x 470uF capacitor
+- 3x 100nF capacitor
+- 1x 100uF capacitor
+- Universal PCB
+
+### Control
+- microcontroler (see 'Supported microcontrolers' section)
+- 1x 2-Channel 12V Relay module (JQC-3FF-S-Z)
+- 1x 1k Ohm resistor
+- A couple of wires
 
 ## Construction manual 
 #
