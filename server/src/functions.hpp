@@ -9,7 +9,7 @@ bool isValidAuthToken( const String token );
 void setRelaysState( const RELAY relay_pin, const int o_state = 0 );
 
 template <std::size_t Size>
-bool in_array( const String& value, const String(&array)[Size] ) {
+bool in_array( const String& value, const String(&array)[Size] ) noexcept {
   for( const auto& arr : array ) {
     if( arr == value ) {
       return true;

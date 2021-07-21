@@ -2,12 +2,12 @@
 
 struct NETWORK_CONFIG NETWORK_CONFIG;
 
-bool isValidAuthToken( const String token ) {
+bool isValidAuthToken( const String token ) noexcept {
   return ( token == NETWORK_CONFIG.authtoken );
 }
 
 
-void setRelaysState( const RELAY relay_pin, const int o_state)  {
+void setRelaysState( const RELAY relay_pin, const int o_state) noexcept {
     RELAY opposite = RELAY::D6_OPEN;
     CONTROLLER_STATE = STATE::CLOSED;
 
