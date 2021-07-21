@@ -15,10 +15,6 @@ void setRelaysState( const RELAY relay_pin, const int o_state) noexcept {
       opposite = RELAY::D7_CLOSE;
       CONTROLLER_STATE = STATE::OPEN;
     }
-
-    Serial.println(o_state);
-    Serial.println( static_cast<int>( opposite ) );
-    Serial.println( static_cast<int>( relay_pin )) ;
     
     digitalWrite( static_cast<int>( relay_pin ), o_state );
     digitalWrite( static_cast<int>( opposite ), !o_state );
