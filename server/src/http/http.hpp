@@ -1,14 +1,15 @@
-
-
-
 #ifndef HTTP_HPP
 #define HTTP_HPP
 
 #include <ESPAsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include "../functions.hpp"
-#include "../settings.hpp"
+#include "routes.hpp"
 
-extern void initHTTPServer();
+namespace webserver {
+
+    void initHTTPServer();
+    
+}
+
 
 #endif // HTTP_HPP
