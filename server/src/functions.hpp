@@ -5,8 +5,8 @@
 #include "settings.hpp"
 #include "Arduino.h"
 
-extern bool isValidAuthToken( const String token );
-extern void setRelaysState( const RELAY relay_pin, const int o_state = 0 );
+bool isValidAuthToken( const String token );
+void setRelaysState( const RELAY relay_pin, const int o_state = 0 );
 
 template <std::size_t Size>
 bool in_array( const String& value, const String(&array)[Size] ) {
